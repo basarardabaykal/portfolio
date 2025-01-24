@@ -1,5 +1,5 @@
 import './App.css';
-import Card from "./components/card"
+import Projects from "./components/projects"
 
 function App() {
   return (
@@ -15,9 +15,7 @@ function App() {
             <div className='mb-20'><p>I worked here and here and here</p></div>
           </section>
           <section id='projects'>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
+            <Projects></Projects>
           </section>
           <section id='communication'>
             You can connect with me here and here
