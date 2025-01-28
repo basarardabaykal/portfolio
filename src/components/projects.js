@@ -1,20 +1,31 @@
 import Card from "./card"
+import db from "../firebase"
+import { collection, getDocs } from "firebase/firestore"
+import { useEffect, useState } from "react"
 
 export default function Projects() {
+    const [projects, setProjects] = useState([])
+
+    useEffect(() => {
+        const fetchDocs = async () => {
+            const querySnapshot = await getDocs(collection(db, "projects"))
+            const docs = querySnapshot.docs.map((doc) => ({
+                id: doc.id,
+                ...doc.data(),
+            }))
+            setProjects(docs)
+        }
+        fetchDocs()
+    }, [])
+
     return (
-        <>
-        <Card name="Project1" description="In this project, I did this and this and that and that and
-             this and that and that and this and that and that and this and that and that and this and that and that" 
-             technologies="*React *Tailwind *Firebase">
-        </Card>    
-        <Card name="Project1" description="In this project, I did this and this and that and that and
-             this and that and that and this and that and that and this and that and that and this and that and that" 
-             technologies="*React *Tailwind *Firebase">
-        </Card> 
-        <Card name="Project1" description="In this project, I did this and this and that and that and
-             this and that and that and this and that and that and this and that and that and this and that and that" 
-             technologies="*React *Tailwind *Firebase">
-        </Card> 
-        </>   
+        
+        projects.length > 0 ? (
+            projects.map((project) => (
+                <Card name={project.name} description={project.description} keywords={project.keywords}></Card>
+            ))
+        ) : (
+            <p>Loading..</p>
+        )   
     )
 }
