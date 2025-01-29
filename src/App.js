@@ -6,12 +6,14 @@ function App() {
     <div className="App">
       <div className='bg-slate-600 min-h-screen w-full flex flex-row'>
         <section id ="communications" className='w-1/5 flex flex-col justify-center fixed items-center h-full left-8'>
-          <div className='bg-gray-300 w-[100px] h-[100px] rounded-full mx-auto overflow-hidden my-4'><img src="/me.jpeg" alt="me.png" /></div>
-          <a id='cv' href="" className='w-[60px] h-[60px] rounded-full mx-auto my-2'>
+          <div className='bg-gray-300 w-[100px] h-[100px] rounded-full mx-auto overflow-hidden my-4  shadow-xl'><img src="/me.jpeg" alt="me.png" /></div>
+          <a id='cv' href="" className='w-[60px] h-[60px] rounded-full mx-auto my-2 shadow-xl'>
             <img src="/cv.png" alt="" /> {/* Icon made by Freepik from www.flaticon.com */}</a>
-          <a id='linkedin' target='_blank' href="https://www.linkedin.com/in/ba%C5%9Far-arda-baykal-337530249/" className='w-[60px] h-[60px] rounded-full mx-auto my-2'>
+          <a id='linkedin' target='_blank' href="https://www.linkedin.com/in/ba%C5%9Far-arda-baykal-337530249/"
+           className='w-[55px] h-[55px] mx-auto my-2 overflow-hidden shadow-xl'>
           <img src="/linkedin.png" alt="" /></a>
-          <a id='github' href="https://github.com/basarardabaykal" target='_blank' className='w-[60px] h-[60px] rounded-full overflow-hidden mx-auto my-2'>
+          <a id='github' href="https://github.com/basarardabaykal" target='_blank' 
+           className='w-[60px] h-[60px] rounded-full overflow-hidden mx-auto my-2  shadow-xl'>
             <img src="/github.png" alt="" /></a>
         </section>
         <section id = "main" className=' min-h-screen w-3/5 max-w-screen-md mx-auto py-40 text-white text-lg'>
