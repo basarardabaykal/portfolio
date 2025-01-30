@@ -12,7 +12,7 @@ export default function Projects() {
             const docs = querySnapshot.docs.map((doc) => ({
                 id: doc.id,
                 ...doc.data(),
-            }))
+            })).sort((a, b) => b.index - a.index);
             setProjects(docs)
         }
         fetchDocs()
