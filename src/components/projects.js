@@ -22,8 +22,8 @@ export default function Projects() {
         
         projects.length > 0 ? (
             projects.map((project) => (
-                <Card name={project.name} description={project.description} keywords={project.keywords}></Card>
-            ))
+                <Card name={project.name} links={project.links} description={project.description} keywords={project.keywords}></Card>
+            ))  
         ) : (
             <p>Loading..</p>
         )   
