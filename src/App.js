@@ -27,8 +27,8 @@ function App() {
             <div className='mt-16 pb-20 border-b-[0.5px] border-gray-400'>
               <p className='lg:text-xl text-base mb-8'>My Tech Stack</p>
               <ul className='grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 lg:gap-4 gap-2 list-disc lg:pl-24 sm:pl-20 pl-12'>
-                <li className='text-left'>React</li>
-                <li className='text-left'>Tailwind</li>
+                <li className='text-left'>React.js</li>
+                <li className='text-left'>TailwindCSS</li>
                 <li className='text-left'>Next.js</li>
                 <li className='text-left'>Firebase</li>
                 <li className='text-left'>Typescript</li>
@@ -52,14 +52,14 @@ function App() {
               <p className='max-w-64 pr-4'>Hacettepe Araştırma ve Geliştirme Topluluğu</p>
               <div className='my-auto flex flex-col pl-4'>
                 <p>Head of Web Unit</p>
-                <p>(August 2024 - Currently)</p>
+                <p>(August 2024 - Present)</p>
               </div>
             </div>
             <div className='flex flex-row justify-evenly mt-16'>
               <p className='max-w-64 pr-4'>ACM Hacettepe Öğrenci Topluluğu</p>
               <div className='my-auto flex flex-col pl-4'>
                 <p>Web Developer</p>
-                <p>(December 2023 - Currently)</p>
+                <p>(December 2023 - Present)</p>
               </div>
             </div>
           </div>
