@@ -7,7 +7,7 @@ function App() {
       <div className='min-h-screen w-full flex flex-row' style={{ background: 'radial-gradient(ellipse, rgba(31, 45, 55, 1) 0%, rgba(100, 116, 138, 1) 100%)' }}>
         <section id ="communications" className='z-10 lg:w-1/5 w-full flex lg:flex-col flex-row justify-center fixed items-center lg:h-full xl:left-8 left-0 px-8 sm:px-40 md:px-64 lg:px-0'>
           <div className='bg-gray-300 lg:w-[100px] w-[60px] lg:h-[100px] h-[60px] rounded-full mx-auto overflow-hidden my-4  shadow-xl'><img src="/me.jpeg" alt="me.png" /></div>
-          <a id='cv' href="" className='lg:w-[60px] w-[36px] lg:h-[60px] h-[36px] rounded-full mx-auto my-2 shadow-xl'>
+          <a id='cv' href="/Başar Arda Baykal CV.pdf" target='_blank' className='lg:w-[60px] w-[36px] lg:h-[60px] h-[36px] rounded-full mx-auto my-2 shadow-xl'>
             <img src="/cv.png" alt="" /> {/* Icon made by Freepik from www.flaticon.com */}</a>
           <a id='linkedin' target='_blank' href="https://www.linkedin.com/in/ba%C5%9Far-arda-baykal-337530249/"
            className='lg:w-[55px] w-[33px] lg:h-[55px] h-[33px] mx-auto my-2 overflow-hidden shadow-xl'>
